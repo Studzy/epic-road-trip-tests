@@ -4,7 +4,7 @@ require("cypress-xpath")
 
 context('Check if elements exists', () => {
     beforeEach(() => {
-        cy.visit(Cypress.env("front-url"))
+        cy.visit("https://146.190.21.154:80/")
         cy.contains('Epic road trip').should('exist')
     })
 
